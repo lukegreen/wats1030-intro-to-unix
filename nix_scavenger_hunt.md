@@ -15,8 +15,24 @@ and then clone it to your development environment.
 ### Navigating the Filesystem
 
 * Get an idea of where you are in the operating system. Use the `pwd` command to find your "path to working directory"--your current location in the filesystem of your devbox. *Paste the output of the `pwd` command here:*
+/home/cabox/workspace
+
 * Discover more about this filesystem. Use `ls` (the "list" command)to see what is in this directory. *What directories and files do you see when you run `ls`?*
+LICENSE  README.md  challenge_files  nix_scavenger_hunt.md  nix_scavenger_hunt_stretch.md 
+
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
+drwxrwxr-x  4 cabox cabox 4.0K Apr  8 19:17 .                                                                                                                                                                     
+drwxr-xr-x 11 cabox cabox 4.0K Apr  8 19:17 ..                                                                                                                                                                    
+drwxrwxr-x  8 cabox cabox 4.0K Apr  8 19:17 .git                                                                                                                                                                  
+-rw-rw-r--  1 cabox cabox 1.1K Apr  8 19:17 LICENSE                                                                                                                                                               
+-rw-rw-r--  1 cabox cabox 1.4K Apr  8 19:17 README.md                                                                                                                                                             
+drwxrwxr-x  7 cabox cabox 4.0K Apr  8 19:17 challenge_files                                                                                                                                                       
+-rw-rw-r--  1 cabox cabox 5.5K Apr  8 19:17 nix_scavenger_hunt.md                                                                                                                                                 
+-rw-rw-r--  1 cabox cabox  317 Apr  8 19:17 nix_scavenger_hunt_stretch.md    
+
+These results show the permissions associated with each file or directory
+
+
 * The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://linux.die.net/man/)Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
